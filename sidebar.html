@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rabbit Hole</title>
+  <link rel="stylesheet" href="sidebar.css" />
+</head>
+<body>
+  <header class="rh-header">
+    <div class="rh-title">
+      <span class="rh-title-emoji">🐇</span>
+      <span>Rabbit Hole</span>
+    </div>
+    <div class="rh-subtitle">powered by Gemini Flash 2.0</div>
+  </header>
+
+  <section id="empty-state" class="rh-empty">
+    <div class="rh-empty-art">🐇✨</div>
+    <h2>Select text, then dive in</h2>
+    <p>Highlight anything on a webpage and click <b>Down the Rabbit Hole</b>. I'll surface fascinating context, unexpected connections, and deeper questions to explore.</p>
+    <div class="rh-tip">Tip: you can also right-click your selection → "Down the Rabbit Hole 🐇"</div>
+    <a id="settings-link" href="#" class="rh-settings-link">Set your Gemini API key →</a>
+  </section>
+
+  <section id="loading-state" class="rh-loading" hidden>
+    <div class="rh-spinner"></div>
+    <div class="rh-loading-text">Digging the tunnel…</div>
+  </section>
+
+  <main id="content" class="rh-content" hidden>
+    <div class="rh-selection-quote">
+      <div class="rh-quote-label">YOU SELECTED</div>
+      <blockquote id="selection-text"></blockquote>
+      <div id="page-source" class="rh-page-source"></div>
+    </div>
+
+    <div id="depth-badge" class="rh-depth-badge"></div>
+
+    <div class="rh-breadcrumbs" id="breadcrumbs"></div>
+
+    <div class="rh-section">
+      <p id="summary" class="rh-summary"></p>
+    </div>
+
+    <div class="rh-section">
+      <h3>💡 Did you know?</h3>
+      <ul id="facts" class="rh-facts"></ul>
+    </div>
+
+    <div class="rh-section">
+      <h3>🌀 Go deeper</h3>
+      <div id="questions" class="rh-questions"></div>
+    </div>
+
+    <div class="rh-section">
+      <h3>🗺️ Related</h3>
+      <div id="topics" class="rh-topics"></div>
+    </div>
+  </main>
+
+  <section id="error-state" class="rh-error" hidden>
+    <div class="rh-error-emoji">😵‍💫</div>
+    <h3 id="error-title">Something went wrong</h3>
+    <p id="error-message"></p>
+    <button id="retry-btn" class="rh-primary-btn">Try Again</button>
+  </section>
+
+  <footer class="rh-footer">
+    <div class="rh-ask-bar">
+      <input
+        id="follow-up-input"
+        type="text"
+        placeholder="Ask a follow-up question…"
+        autocomplete="off"
+      />
+      <button id="follow-up-send" class="rh-send-btn" aria-label="Send">→</button>
+    </div>
+  </footer>
+
+  <script src="sidebar.js"></script>
+</body>
+</html>
