@@ -2,6 +2,12 @@
 
 A Firefox extension that turns any highlighted text into an AI-generated rabbit hole — a quick gist, a few surprising facts, follow-up questions, and related topics to dive into. Powered by Google Gemini 2.5 Flash Lite.
 
+<img width="351" height="1030" alt="Screenshot 2026-04-18 at 10 06 51 AM" src="https://github.com/user-attachments/assets/c450d6be-6d2f-4e25-a33b-fefb9640cbf8" />
+
+## Demo
+
+https://www.youtube.com/watch?v=ojxnEeWscu8
+
 ## How it works
 
 - Select text on any page → pink "🐇 Down the Rabbit Hole" button appears next to the selection (or right-click → "Down the Rabbit Hole 🐇").
